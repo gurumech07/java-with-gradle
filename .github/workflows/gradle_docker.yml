@@ -41,6 +41,9 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
+    - name: List build outputs
+      run: find build/ -name "*.jar" -o -name "*.war" | head -10
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
 
