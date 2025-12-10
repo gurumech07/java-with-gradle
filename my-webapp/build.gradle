@@ -4,6 +4,17 @@ plugins {
 	id 'java'
 }
 
+plugins {
+  id "org.sonarqube" version "7.2.0.6526"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "gurumech07_java-with-gradle"
+    property "sonar.organization", "gurumech07"
+  }
+}
+
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
@@ -19,13 +30,3 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-plugins {
-  id "org.sonarqube" version "7.2.0.6526"
-}
-
-sonar {
-  properties {
-    property "sonar.projectKey", "gurumech07_java-with-gradle"
-    property "sonar.organization", "gurumech07"
-  }
-}
