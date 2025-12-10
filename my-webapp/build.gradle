@@ -18,3 +18,23 @@ dependencies {
 	implementation project(':my-backend')
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
+
+plugins {
+    id "org.sonarqube" version "4.4.1.3373" apply false  // Latest version
+}
+
+allprojects {
+    // Common settings
+}
+
+subprojects {
+    apply plugin: "org.sonarqube"
+    
+    sonarqube {
+        properties {
+            property "sonar.projectKey", "your-root-project-key:my-submodule"  // Format: root:submodule
+            property "sonar.host.url", System.getenv("SONAR_HOST_URL")
+            property "sonar.token", System.getenv("SONAR_TOKEN")
+        }
+    }
+}
