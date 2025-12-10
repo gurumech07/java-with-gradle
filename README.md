@@ -132,6 +132,6 @@ MIT License - see [LICENSE](LICENSE) © 2025 [Your Name]
 
 ## 👨‍💻 Author
 
-[Your Name] | [LinkedIn](https://www.linkedin.com/in/yourprofile) | DevSecOps Engineer
+[Gurubasav Yellur] | [LinkedIn](https://www.linkedin.com/in/gurubasavyellur) | DevSecOps Sysetm Manager
 
 **Production-ready Java CI/CD pipeline → Ready for your LinkedIn portfolio!**
