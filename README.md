@@ -1,4 +1,4 @@
-# Java Gradle CI/CD Project
+# Java Gradle CI/CD Project with SonarQube Analysis
 
 Enterprise-grade Java 17 application with Gradle build automation and Docker Hub publishing via GitHub Actions. Demonstrates production-ready CI/CD pipeline with testing, multi-tag Docker builds, and secure secret management.
 
@@ -15,10 +15,12 @@ Enterprise-grade Java 17 application with Gradle build automation and Docker Hub
 | Category | Tools |
 |----------|-------|
 | Language | Java 17 |
+| Code Quality (SAST) | SonarQube Cloud |
 | Build | Gradle (wrapper included) |
 | Container | Docker Buildx |
 | CI/CD | GitHub Actions |
 | Runtime | Eclipse Temurin JDK 17 |
+
 
 ## 🚀 Quick Start
 
@@ -110,6 +112,9 @@ text
 | Gradle Build | ~2-4min | JAR/WAR files |
 | Docker Build | ~1-2min | Multi-tagged images |
 | Total (cached) | <5min | Docker Hub published |
+
+## SonarQube Analysis
+#SonarCloud: https://sonarcloud.io/projects#:~:text=Gurubasav%20Yellur-,my%2Dwebapp,-New
 
 ## 🔐 Security & Best Practices
 
